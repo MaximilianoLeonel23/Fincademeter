@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1be0550f6e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Finca Demeter</title>
   </head>
   <body>
@@ -18,7 +23,7 @@
       <div class="header-pop">
         <p>
           ¡Cumplimos 15 años en Finca Demeter! No te pierdas
-          <a href="/nuestros-productos"><u>nuestros descuentos</u></a>
+          <a href="./pages/products.html"><u>nuestros descuentos</u></a>
         </p>
         <div class="header-pop--close">
           <img src="./assets/icons/close.svg" alt="close button" />
@@ -26,7 +31,13 @@
       </div>
       <nav class="navbar">
         <div class="navbar-logo">
-          <a href="/"> FINCA DEMETER </a>
+          <a href="/">
+            <i
+              class="fa-sharp fa-solid fa-wine-bottle fa-fade fa-1xl"
+              style="color: #ebecac"
+            ></i>
+            <h4>FINCA DEMETER</h4></a
+          >
         </div>
         <ul class="navbar-nav">
           <li class="navbar-item">
@@ -35,7 +46,7 @@
           <li class="navbar-item">
             <a
               class="navbar-link"
-              href="/nuestros-productos"
+              href="./pages/products.html"
               alt="Nuestros productos"
               >Nuestros productos</a
             >
@@ -43,13 +54,15 @@
           <li class="navbar-item">
             <a
               class="navbar-link"
-              href="/experiencia-demeter"
+              href="/pages/experience.html"
               alt="Experiencia Demeter"
               >Experiencia Demeter</a
             >
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="/contacto" alt="Contacto">Contacto</a>
+            <a class="navbar-link" href="./pages/contact.html" alt="Contacto"
+              >Contacto</a
+            >
           </li>
           <li class="navbar-item">
             <button class="navbar-btn" type="button">Reservar</button>
@@ -62,6 +75,9 @@
     </header>
     <main>
       <div class="video-container">
+        <a href="./pages/experience.html">
+          <button type="button" class="video-btn">Descubre la finca</button>
+        </a>
         <video
           src="./assets/videos/banner_video.mp4"
           autoplay
@@ -108,6 +124,17 @@
           </article>
         </div>
       </section>
+      <section class="section-varietales">
+        <h2 class="title-varietales">Varietales</h2>
+        <div class="container-varietales">
+          <button type="button" class="btn-varietales">
+            Conocé nuestro catálogo
+          </button>
+          <button type="button" class="btn-varietales">
+            ¿Querés vender nuestros productos?
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer">
@@ -133,8 +160,11 @@
             /></a>
           </li>
         </ul>
-        <p>Razón legal de la empresa</p>
-        <p>Política de datos y privacidad</p>
+        <div class="footer-description">
+          <p>Demeter SRL</p>
+          <p>Ruta Provincial 94, M552 Camino de los Viñedos, Mendoza</p>
+          <p>[Política de datos y privacidad]</p>
+        </div>
       </div>
     </footer>
   </body>
