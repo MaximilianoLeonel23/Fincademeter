@@ -20,7 +20,17 @@
     var teléfono= document.getElementByld("teléfono").value;
     var asunto= document.getElementByld("asunto").value;
     var mensaje=document.getElementByld("mensaje").value;
-    var xhttp= new XMLH
+    var xhttp= new XMLHttpRequest ();
+    xhttp.open("POST", "enviar_formulario.php", true);
+    xhttp.setRequestHeader ("Content-type","application/x-www-form-urlencoded");
+    xhttp.send("nombre="+nombre+"&email="+email+"&teléfono="+teléfono+ "&asunto="+asunto+"&mensaje="+mensaje);
+    alert("Mensaje enviado con éxito");
+    document.getElementByld("formulario")reset()
+    }
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1> ¿Tienes alguna duda o consulta? Escríbenos </h1>
+    
+  </body>
 </html>
