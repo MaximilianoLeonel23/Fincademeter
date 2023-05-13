@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    el="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
 
     <title>Contacto -Finca Demeter </title>
-    <scrip>
-     fuction enviarFormulario(){
-    var nombre = document.getElementByld("nombre").value;
-    var email= document.getElementByld("email").value;
-    var teléfono= document.getElementByld("teléfono").value;
-    var asunto= document.getElementByld("asunto").value;
-    var mensaje=document.getElementByld("mensaje").value;
-    var xhttp= new XMLHttpRequest ();
-    xhttp.open("POST", "enviar_formulario.php", true);
-    xhttp.setRequestHeader ("Content-type","application/x-www-form-urlencoded");
-    xhttp.send("nombre="+nombre+"&email="+email+"&teléfono="+teléfono+ "&asunto="+asunto+"&mensaje="+mensaje);
-    alert("Mensaje enviado con éxito");
-    document.getElementByld("formulario")reset()
-    }
-    </script>
-  </head>
-  <body>
+    <scrip src="contacto.js"></script>
+</head>
+<body>
     <h1> ¿Tienes alguna duda o consulta? Escríbenos </h1>
-    <form id="formulario">
-      <label for="nombre"><Nombre:</label>
-      <imput type="text" id ="nombre" name="nombre"><br>
-      <label for="email"><Email:</label>
-      <imput type="text" id ="Email" name="Email"><br>
-      <label for="teléfono"><Teléfono: </label>
-      <imput type="text" id ="teléfono" name="Teléfono"><br>
-      <label for="asunto"><Asunto: </label>
-      <imput type="text" id="asunto" name="Asunto"><br>
-      <label for="mensaje"><Mensaje:</label>
-      <textarea id="mensaje" name="Mensaje"></textarea><br>
-      <button type="button" onclick="enviarFormulario()"> Enviar</button>
-      </form>
-      
-    
-  </body>
+    <form id="contactoForm">
+     <label for="nombre">Nombre:</label>
+     <imput type="text" id="nombre" name="nombre" required>
+     <br>
+     <label for="email">Email:</label>
+     <imput type="text" id ="Email" name="Email" required>
+    <br>
+     <label for="teléfono">Teléfono: </label>
+     <imput type="text" id ="teléfono" name="Teléfono" required>
+    <br>
+     <label for="asunto">Asunto: </label>
+     <imput type="text" id="asunto" name="Asunto" required>
+     <br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="Mensaje"></textarea required><br>
+    <button type="button" onclick="enviarFormulario()"> Enviar</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ubicación Geográfica</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <script src="ubicacion.js"></script>
+</head>
+<body>
+  <h1>Nuestros datos de contacto</h1>
+  <div id="map"></div>
+</body>
 </html>
