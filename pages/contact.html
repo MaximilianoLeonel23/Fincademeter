@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    el="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
 
-    <title>Document</title>
-  </head>
-  <body></body>
+    <title>Contacto -Finca Demeter </title>
+    <scrip src="contacto.js"></script>
+</head>
+<body>
+    <h1> ¿Tienes alguna duda o consulta? Escríbenos </h1>
+    <form id="contactoForm">
+     <label for="nombre">Nombre:</label>
+     <imput type="text" id="nombre" name="nombre" required>
+     <br>
+     <label for="email">Email:</label>
+     <imput type="text" id ="Email" name="Email" required>
+    <br>
+     <label for="teléfono">Teléfono: </label>
+     <imput type="text" id ="teléfono" name="Teléfono" required>
+    <br>
+     <label for="asunto">Asunto: </label>
+     <imput type="text" id="asunto" name="Asunto" required>
+     <br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="Mensaje"></textarea required><br>
+    <button type="button" onclick="enviarFormulario()"> Enviar</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ubicación Geográfica</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <script src="ubicacion.js"></script>
+</head>
+<body>
+  <h1>Nuestros datos de contacto</h1>
+   h4>Ubicación: Calle 393 Besares Lujan de Cuyo. Mendoza Argentina </h4>
+  <h4>Email: fincademeter@vinos.cl</h4>
+  <h4>Teléfono: +54 333-333333</h4>
+  <h4>Horarios: Miercoles a Sábado: 8 am- 20 pm
+    Lunes y Martes 9am - 19pm
+    Domingo Cerrado
+  </h4>
+  <div id="map"></div>
+</body>
 </html>
