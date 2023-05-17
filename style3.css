@@ -1,0 +1,258 @@
+/* Variables */
+:root {
+  --color-primary500: #3b1133;
+  --color-secondary500: #ebe1d8;
+  --gray200: #f1f1f1;
+  --gray300: #e3e3e3;
+  --gray400: #d6d6d6;
+  --gray500: #c8c8c8;
+  --gray600: #969696;
+  --gray700: #646464;
+  --gray800: #323232;
+  --dark: #191919;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border-box: none;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* Clases útiles */
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+/* Anuncio publicitario */
+.header-pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-secondary500);
+  color: var(--gray800);
+  padding: 0 3rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.header-pop--close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary500);
+  padding: 0.75rem 3rem;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  & a {
+    color: var(--gray300);
+  }
+}
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-expand {
+  display: none;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-link {
+  color: var(--gray400);
+  &:hover {
+    color: var(--color-secondary500);
+  }
+}
+
+.navbar-btn {
+  color: var(--gray200);
+  background-color: transparent;
+  border: 1px solid var(--gray200);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: var(--gray200);
+    color: var(--color-primary500);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+/* Navbar Mediaquery */
+@media (max-width: 600px) {
+  .header-pop {
+    padding: 0 1rem;
+    font-size: 0.65rem;
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-expand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-primary500);
+
+  & p {
+    color: var(--gray200);
+    line-height: 1;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+/* Main Inicio */
+
+main {
+  padding-top: 4rem;
+}
+
+/* Banner inicio */
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  background: linear-gradient(to top, var(--color-primary500), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* Sobre la empresa */
+
+.section-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  gap: 3rem;
+  background-color: var(--color-primary500);
+}
+.title-company {
+  color: var(--gray300);
+  font-size: 1.5rem;
+}
+.container-company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.card-company {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  & h4 {
+    color: var(--gray400);
+  }
+  & p {
+    color: var(--gray500);
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Mediaquery */
+
+@media (max-width: 600px) {
+  .section-company {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .title-company {
+    font-size: 1rem;
+  }
+  .container-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-company {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    & p {
+      font-size: 0.75rem;
+    }
+  }
+}
