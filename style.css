@@ -35,12 +35,12 @@ header {
 /* Main Inicio */
 
 main {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 @media (max-width: 600px) {
   main {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }
 
@@ -142,6 +142,7 @@ main {
   }
   .navbar {
     padding: 0.5rem 1rem;
+    z-index: 50;
   }
 
   .navbar-logo {
@@ -156,9 +157,34 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
   }
 }
 
+/* Navbar mobile */
+
+.navbar-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary500);
+  padding: 0 0 1rem;
+  border-top: 1px solid var(--color-secondary500);
+  transform: translateX(-100%);
+  transition: transform 500ms;
+}
+
+.navbar-mobile--show {
+  transform: translateX(0);
+}
+
+.navbar-nav--mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
 /* Footer */
 
 .footer {
@@ -362,98 +388,5 @@ main {
     transform: translateY(2px);
     transition: 300ms;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
-  }
-}
-
-/* Nuestros productos */
-
-.wine-list {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: var(--color-primary500);
-}
-
-.h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-family: "Dancing Script", cursive;
-  font-family: "Great Vibes", cursive;
-  font-family: "Instrument Serif", serif;
-  font-family: "Poltawski Nowy", serif;
-  color: burlywood;
-}
-
-.figure {
-  display: inline-block;
-  margin: 10px;
-  text-align: center;
-}
-
-.img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 15%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.figcaption {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.nav {
-  width: 200px;
-  height: 1000px;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-.ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.li {
-  margin-bottom: 10px;
-}
-
-.a {
-  text-decoration: none;
-  color: var(--gray200);
-}
-
-.h1 {
-  font-family: "Dancing Script", cursive;
-  font-family: "Great Vibes", cursive;
-  font-family: "Instrument Serif", serif;
-  font-family: "Poltawski Nowy", serif;
-}
-
-.h2 {
-  color: #f1f1f1;
-}
-.p {
-  font-family: "Dancing Script", cursive;
-  font-family: "Great Vibes", cursive;
-  font-family: "Instrument Serif", serif;
-  font-family: "Poltawski Nowy", serif;
-
-  color: #b5b1b1;
-  text-align: justify;
-  text-decoration: wavy;
-  text-decoration-style: unset;
-}
-.span {
-  color: blue;
-  font-weight: bold;
-  font-size: 20px;
-}
-@media screen {
-  min-width: 600px;
-  .img {
-    width: 50%;
   }
 }
