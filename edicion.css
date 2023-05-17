@@ -162,9 +162,11 @@ h2 {
   height: 100vh;
   position: absolute;
   margin: 0;
-  opacity: 0.6;
+  
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  
+  
 }
 .parrafo {
   z-index: 1;
@@ -194,10 +196,12 @@ h2 {
   width: 100%;
   height: auto;
 }
-p {
+.p {
   margin-left: 50px;
   margin-right: 50px;
   word-wrap: break-word;
+  color: blue;
+  opacity: 0.99;
 }
 .texto {
   opacity: 1;
@@ -220,6 +224,7 @@ p {
 }
 .eco {
   width: 40%;
+  margin-left: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .tour {
@@ -254,9 +259,19 @@ p {
   .eco {
     width: 80%;
   }
+  .p{
 
+    width:80%;
+    margin-left: 20px;
+    font-size: 20px;
+    word-wrap:break-word;
+    text-align: center;
+    
+  }
   .imagen {
     float: left;
     width: 100%;
   }
+  
+  
 }
