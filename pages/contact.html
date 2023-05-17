@@ -11,53 +11,151 @@
     el="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./estilo.css" />
 
     <title>Contacto -Finca Demeter </title>
-    <scrip src="contacto.js"></script>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
 </head>
 <body>
+  <header>
+    <div class="header-pop">
+      <p>
+        ¡Cumplimos 15 años en Finca Demeter! No te pierdas
+        <a href="../Products.html"><u>nuestros descuentos</u></a>
+      </p>
+      <div class="header-pop--close">
+        <img src="../assets/icons/close.svg" alt="close button" />
+      </div>
+    </div>
+    <!-- Navbar desktop -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="/"> FINCA DEMETER </a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="navbar-link" href="/" alt="Inicio">Inicio</a>
+        </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            href="../Products.html"
+            alt="Nuestros productos"
+            >Nuestros productos</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a
+            class="navbar-link"
+            href="../Experienciademeter.html"
+            alt="Experiencia Demeter"
+            >Experiencia Demeter</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="./contact.html" alt="Contacto"
+            >Contacto</a
+          >
+        </li>
+        <li class="navbar-item">
+          <button class="navbar-btn" type="button">Reservar</button>
+        </li>
+      </ul>
+      <div id="navbar-expand" class="navbar-expand">
+        <img src="../assets/icons/menu.svg" alt="Menú hamburguesa" />
+      </div>
+    </nav>
+    <nav class="navbar-mobile">
+      <ul class="navbar-nav--mobile">
+        <li class="navbar-item">
+          <a href="/" class="navbar-link">Inicio</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../Products.html" class="navbar-link">Nuestros productos</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../Experienciademeter.html" class="navbar-link"
+            >Experiencia Demeter</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a href="./contact.html" class="navbar-link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
     <h1> ¿Tienes alguna duda o consulta? Escríbenos </h1>
     <form id="contactoForm">
      <label for="nombre">Nombre:</label>
-     <imput type="text" id="nombre" name="nombre" required>
+     <input type="text" id="nombre" name="nombre" required/>
      <br>
      <label for="email">Email:</label>
-     <imput type="text" id ="Email" name="Email" required>
+     <input type="text" id ="Email" name="Email" required/>
     <br>
-     <label for="teléfono">Teléfono: </label>
-     <imput type="text" id ="teléfono" name="Teléfono" required>
+    <label for="teléfono">Teléfono: </label>
+    <input type="text" id ="teléfono" name="Teléfono" required/>
     <br>
-     <label for="asunto">Asunto: </label>
-     <imput type="text" id="asunto" name="Asunto" required>
-     <br>
+    <label for="asunto">Asunto: </label>
+    <input type="text" id="asunto" name="Asunto" required/>
+    <br>
     <label for="mensaje">Mensaje:</label>
     <textarea id="mensaje" name="Mensaje"></textarea required><br>
-    <button type="button" onclick="enviarFormulario()"> Enviar</button>
+      <button type="button" onclick="enviarFormulario()"> Enviar</button>
     </form>
     <div id="resultado"></div>
+    <div>
+      <h1>Nuestros datos de contacto</h1>
+      <h4>Ubicación: Calle 393 Besares Lujan de Cuyo. Mendoza Argentina </h4>
+      <h4>Email: fincademeter@vinos.cl</h4>
+      <h4>Teléfono: +54 333-333333</h4>
+      <h4>Horarios: Miercoles a Sábado: 8 am- 20 pm
+            Lunes y Martes 9am - 19pm
+            Domingo Cerrado
+      </h4>
+     <div id="map"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <ul class="footer-nav">
+        <li class="footer-item">
+          <a href="/" class="footer-social"
+            ><img src="/assets/icons/whatsapp.svg"
+          /></a>
+        </li>
+        <li class="footer-item">
+          <a href="/" class="footer-social"
+            ><img src="/assets/icons/facebook.svg"
+          /></a>
+        </li>
+        <li class="footer-item">
+          <a href="/" class="footer-social">
+            <img src="/assets/icons/instagram.svg" />
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="/" class="footer-social"
+            ><img src="/assets/icons/twitter.svg"
+          /></a>
+        </li>
+      </ul>
+      <p>Razón legal de la empresa</p>
+      <p>Política de datos y privacidad</p>
+    </div>
+  </footer>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/pop.js"></script>
+    <!-- <script src="ubicacion.js"></script>
+    <script src="contacto.js"></script> -->
+    <!-- Queda por agregar estos dos archivos y enlazarlos en las etiquetas html -->
+
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Ubicación Geográfica</title>
-  <style>
-    #map {
-      height: 400px;
-      width: 100%;
-    }
-  </style>
-  <script src="ubicacion.js"></script>
-</head>
-<body>
-  <h1>Nuestros datos de contacto</h1>
-   h4>Ubicación: Calle 393 Besares Lujan de Cuyo. Mendoza Argentina </h4>
-  <h4>Email: fincademeter@vinos.cl</h4>
-  <h4>Teléfono: +54 333-333333</h4>
-  <h4>Horarios: Miercoles a Sábado: 8 am- 20 pm
-    Lunes y Martes 9am - 19pm
-    Domingo Cerrado
-  </h4>
-  <div id="map"></div>
-</body>
-</html>
+

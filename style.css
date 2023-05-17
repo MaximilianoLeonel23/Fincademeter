@@ -205,6 +205,12 @@ main {
   padding-top: 4rem;
 }
 
+@media (max-width: 600px) {
+  main {
+    padding-top: 2rem;
+  }
+}
+
 /* Banner inicio */
 
 .video-container {
@@ -228,6 +234,35 @@ video {
   z-index: 10;
 }
 
+.video-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  & a {
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    height: 60vh;
+  }
+
+  .video-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.75rem;
+  }
+}
 /* Sobre la empresa */
 
 .section-company {

@@ -10,34 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    
-
-
-    
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/1be0550f6e.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">    
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1be0550f6e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Great+Vibes&family=Instrument+Serif:ital@1&family=Poltawski+Nowy:ital,wght@1,700&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./pages/estilo.css">
     <link rel="stylesheet" href="./style.css">
-    
-    
     <title>Finca Demeter</title>
   </head>
   <body>
     <header>
-     
-          
+      
+      <!-- Navbar desktop -->
       <nav class="navbar">
         <div class="navbar-logo">
           <a href="/"> FINCA DEMETER </a>
@@ -49,7 +41,7 @@
           <li class="navbar-item">
             <a
               class="navbar-link"
-              href="/nuestros-productos"
+              href="./Products.html"
               alt="Nuestros productos"
               >Nuestros productos</a
             >
@@ -57,13 +49,15 @@
           <li class="navbar-item">
             <a
               class="navbar-link"
-              href="/experiencia-demeter"
+              href="./Experienciademeter.html"
               alt="Experiencia Demeter"
               >Experiencia Demeter</a
             >
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="/contacto" alt="Contacto">Contacto</a>
+            <a class="navbar-link" href="./pages/contact.html" alt="Contacto"
+              >Contacto</a
+            >
           </li>
           <li class="navbar-item">
             <button class="navbar-btn" type="button">Reservar</button>
@@ -72,6 +66,24 @@
         <div id="navbar-expand" class="navbar-expand">
           <img src="./assets/icons/menu.svg" alt="Menú hamburguesa" />
         </div>
+      </nav>
+      <nav class="navbar-mobile">
+        <ul class="navbar-nav--mobile">
+          <li class="navbar-item">
+            <a href="/" class="navbar-link">Inicio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./Products.html" class="navbar-link">Nuestros productos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./pages/experience.html" class="navbar-link"
+              >Experiencia Demeter</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="./pages/contact.html" class="navbar-link">Contacto</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -219,6 +231,6 @@
         <p>Política de datos y privacidad</p>
       </div>
     </footer>
-    <script src="../scripts/pop.js"></script>
+    <script src="../scripts/navbar.js"></script>
   </body>
 </html>
