@@ -1,4 +1,4 @@
-# <h1 align:center color:blue> Trabajo Práctico - Programa Codo a Codo</h>
+# <h1 align:center> Trabajo Práctico - Programa Codo a Codo</h>
 ## <h2>Página web "Finca Demeter"</h2>
 ![Viñedos Demeter](./imagenes/vi%C3%B1edo.jpg)
 ### <h3> Descripción </h3>
