@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./estilo.css" />
 
     <title>Contacto -Finca Demeter </title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  
     <style>
       #map {
         height: 400px;
@@ -91,36 +94,44 @@
   </header>
   <main>
 
-    <h1> ¿Tienes alguna duda o consulta? Escríbenos </h1>
-    <form id="contactoForm">
-     <label for="nombre">Nombre:</label>
-     <input type="text" id="nombre" name="nombre" required/>
-     <br>
-     <label for="email">Email:</label>
-     <input type="text" id ="Email" name="Email" required/>
-    <br>
-    <label for="teléfono">Teléfono: </label>
-    <input type="text" id ="teléfono" name="Teléfono" required/>
-    <br>
-    <label for="asunto">Asunto: </label>
-    <input type="text" id="asunto" name="Asunto" required/>
-    <br>
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="Mensaje"></textarea required><br>
-      <button type="button" onclick="enviarFormulario()"> Enviar</button>
-    </form>
-    <div id="resultado"></div>
-    <div>
-      <h1>Nuestros datos de contacto</h1>
-      <h4>Ubicación: Calle 393 Besares Lujan de Cuyo. Mendoza Argentina </h4>
-      <h4>Email: fincademeter@vinos.cl</h4>
-      <h4>Teléfono: +54 333-333333</h4>
-      <h4>Horarios: Miercoles a Sábado: 8 am- 20 pm
-            Lunes y Martes 9am - 19pm
-            Domingo Cerrado
-      </h4>
-     <div id="map"></div>
+    <div class="contact-wrap">
+    <div class="contact-in">
+      <h1> Nuestros datos de contacto: </h1>
+      <h2><i class="fa fa-phone" aria-hidden="true"></i>Teléfono</h2>
+      <p>+54 261456789</p>
+      <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Correo</h2>
+      <p>fincademeter@vinos.ar</p>
+      <h2><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección</h2>
+      <p>393 Besares Lujan de Cuyo Mendoza Argentina</p>
+      <h2><i class="fa fa-clock-o" aria-hidden="true"></i>Horarios</h2>
+      <p>Miercoles a Sábado 8 am 20pm</p>
+      <p>Lunes y Martes 9 am 19 pm</p>
+      <p>Domingo Cerrado</p>
+      <ul>
+        <h1>Encuéntranos en nuestras redes sociales</h1>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
+    <div class="contact-in">
+      <h1>Tienes alguna duda o consulta? Escríbenos</h1>
+      <form>
+          <input type="text" placeholder="Nombre:" class="contact-in-input">
+          <input type="text" placeholder="Email:" class="contact-in-input">
+          <input type="text" placeholder="Correo:" class="contact-in-input">
+          <input type="text" placeholder="Asunto:" class="contact-in-input">
+          <textarea placeholder="Mensaje" class="contact-in-textarea"></textarea>
+          <input type="Enviar" value="Enviar" class="contact-in-btn>
+        </form>
+      <div class="contact-in">
+      </form>
+     <div class="contact-in">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.875551717936!2d-68.86834368481273!3d-32.980684980911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0afb0d65985d%3A0x6b3a455c1ecd00f4!2sBesares%20393%2C%20M5505%20Luj%C3%A1n%20de%20Cuyo%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses-419!2scl!4v1684553419390!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+        </div> 
   </main>
   <footer>
     <div class="footer">
