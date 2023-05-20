@@ -18,7 +18,9 @@ font-family: 'Instrument Serif', serif;
 font-family: 'Poltawski Nowy', serif;
     color: burlywood;
   }
-  
+  .texto-blanco{
+    color:white
+}
   .figure {
     display: inline-block;
     margin: 10px;
