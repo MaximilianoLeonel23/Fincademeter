@@ -162,11 +162,9 @@ h2 {
   height: 100vh;
   position: absolute;
   margin: 0;
-  
+
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
-  
 }
 .parrafo {
   z-index: 1;
@@ -259,19 +257,15 @@ h2 {
   .eco {
     width: 80%;
   }
-  .p{
-
-    width:80%;
+  .p {
+    width: 80%;
     margin-left: 20px;
     font-size: 20px;
-    word-wrap:break-word;
+    word-wrap: break-word;
     text-align: center;
-    
   }
   .imagen {
     float: left;
     width: 100%;
   }
-  
-  
 }
