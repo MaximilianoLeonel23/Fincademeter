@@ -31,16 +31,10 @@ El deploy esta en el siguiente link [link](https://fincademeter.vercel.app/)
 
 ## Estructura de carpeta
 
-El index.html and readme son los archivos en el root folder y tambien incluyen en un screenshot y un archivo readme.
+El index.html, readme, las páginas html principales y estilos son los archivos en el root folder.
 
 La carpeta assets contiene icons, imagenes y videos.
 
-La carpeta pages contiene los htmls de las paginas.
-Este es el repositorio
-### <h3> Descripción </h3>
-<p> Este es un proyecto web en el cual se trata de mostar los productos y servicios que ofrece una finca vitivinícola de manera totalmente estática.</p>
- <p> Diseñado en HTML , CSS y Java Scrip; con el objetivo de poner en práctica las habilidades y destrezas adquiridas durante la cursada. </p>
+La carpeta pages contiene el html de la página de contacto.
 
- 
- <h2>Link al repositorio</h2>
- <a href="https://fincademeter.vercel.app/">https://fincademeter.vercel.app/</a>
+
