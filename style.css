@@ -483,3 +483,47 @@ video {
     width: 50%;
   }
 }
+.section{
+
+background-color: #9a5a8e;
+
+}
+
+.redes{
+  margin-top: 0;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #c5ec06;
+  font-weight: bold;
+  font-size: 25px;
+  
+  
+  }
+  .Comunidad{
+  width: 100%;
+  height: 300px;
+  
+  text-align: center;
+  font-weight: bold;
+  
+  
+  }
+  .foto{
+  width: 10%;
+  height: 10%;
+  margin: auto;
+  
+  }
+  .datos{
+
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .boton{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #c5ec06;
+  }
