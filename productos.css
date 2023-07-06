@@ -1,0 +1,43 @@
+/* Variables */
+:root {
+  --color-primary500: #490e3e;
+  --color-secondary500: #ebe1d8;
+  --gray200: #f1f1f1;
+  --gray300: #e3e3e3;
+  --gray400: #d6d6d6;
+  --gray500: #c8c8c8;
+  --gray600: #969696;
+  --gray700: #646464;
+  --gray800: #323232;
+  --dark: #191919;
+}
+
+.new-wines-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  margin: 1rem 0;
+}
+
+.new-wine-product {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--color-secondary500);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  min-width: 20rem;
+
+  color: var(--dark);
+  & h4 {
+    font-size: 1.25rem;
+    font-weight: semibold;
+  }
+
+  & span {
+    font-weight: bold;
+  }
+}
